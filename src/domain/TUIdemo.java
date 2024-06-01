@@ -67,7 +67,7 @@ public class TUIdemo extends TApplication {
     }
     
     private void ShowCustomerDetails() {
-        try(BufferedReader reader = Files.newBufferedReader(Paths.get("test.dat"))){
+        try(BufferedReader reader = Files.newBufferedReader(Paths.get("data\\test.dat"))){
             int numberOfCustomers = Integer.parseInt(reader.readLine()); //Bank.getNumberOfCustomers();
             for(int i = 0; i < numberOfCustomers; i++){
                 reader.readLine();
